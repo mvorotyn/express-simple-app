@@ -1,4 +1,4 @@
-import { Avatar, Typography } from "@material-ui/core";
+import { Avatar, Typography } from "@mui/material";
 import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
 import { useStore } from "../../hooks/use-store";

@@ -1,30 +1,26 @@
-import { styled } from "@mui/material/styles";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell, { tableCellClasses } from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import FirstPageIcon from "@mui/icons-material/FirstPage";
+import LastPageIcon from "@mui/icons-material/LastPage";
 import {
   Box,
   IconButton,
   TableFooter,
   TablePagination,
-  useTheme,
-} from "@material-ui/core";
+  useTheme
+} from "@mui/material";
 import {
-  KeyboardArrowLeft,
-  KeyboardArrowRight,
-} from "@mui/icons-material";
-import LastPageIcon from "@mui/icons-material/LastPage";
-import FirstPageIcon from "@mui/icons-material/FirstPage";
-import {
-  ReactChild,
-  ReactFragment,
-  ReactPortal,
-} from "react";
+  Paper, Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow
+} from "@mui/material/";
+import { styled } from "@mui/material/styles";
+import { tableCellClasses } from "@mui/material/TableCell";
+import { ReactChild, ReactFragment, ReactPortal } from "react";
 import nextId from "react-id-generator";
+
 
 function TablePaginationActions(props: {
   count: any;
@@ -121,7 +117,6 @@ export default function CustomTable(props: {
   page: number;
   handleChangePage: (event: any, page: number) => void;
 }) {
-  
   const dataToRow = (
     data: (
       | boolean
@@ -136,7 +131,7 @@ export default function CustomTable(props: {
     return (
       <StyledTableRow key={nextId()}>
         {props.columnsData.map((column, index: number) => {
-        //   console.log(column.width, column.align)
+          //   console.log(column.width, column.align)
           return (
             <StyledTableCell
               key={index}

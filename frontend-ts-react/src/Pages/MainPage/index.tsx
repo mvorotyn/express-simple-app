@@ -1,4 +1,4 @@
-import { Button, Container } from "@material-ui/core";
+import { Button, Container } from "@mui/material";
 import { observer } from "mobx-react-lite";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@material-ui/core";
+import { Box, Button, Container, Typography } from "@mui/material";
 import { observer } from "mobx-react-lite";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ const Styles = {
   },
 };
 
-export function Page404() {
+export function PageNotFound() {
   const [count, setCount] = useState(0);
   const store = useStore();
   const navigate = useNavigate();

@@ -1,10 +1,4 @@
-import {
-  Box,
-  Button,
-  Container,
-  TextField,
-  Typography,
-} from "@material-ui/core";
+import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import { Stack } from "@mui/material";
 import { observer } from "mobx-react-lite";
 import { useState } from "react";
@@ -44,7 +38,7 @@ function AddNewUser() {
           <Typography variant="h4" component="h4">
             New User Registration
           </Typography>
-          <Stack spacing={2} marginTop='30px' sx={{width: '400px'}}>
+          <Stack spacing={2} marginTop="30px" sx={{ width: "400px" }}>
             <TextField id="filled-basic" label="Name" variant="filled" />
             <TextField id="filled-basic" label="Postion" variant="filled" />
             <TextField id="filled-basic" label="Phone" variant="filled" />
